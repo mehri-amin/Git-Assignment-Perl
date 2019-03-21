@@ -1,0 +1,61 @@
+COMP2041 Assignment 1 Diary
+z5113067
+
+Date: 21/09/2018
+Start: 12:00
+End: 14:00
+Activity: Reading Specification + Research on Git
+Comments: Whilst also helping out with CSE hackathon, I spent this time reading through the specificaiton and getting familiar with git at every spare chance I got.
+
+
+Date: 25/09/2018
+Start: 23:00
+End: 00:30
+Activity: Coding
+Comments: I decided to jump into coding before planning, which I kind of regretted but also didn't because it helped me get into the rhythm of things.
+It did however took way too long to get init and add to be implemented without planning and just coding on the go. Although I have become more comfortable with the assignment by just diving into coding, I will spend tomorrow starting from planning! 
+
+Date: 26/09/2018
+Start: 16:30
+End: 21:00
+Activity: Planning and implementing
+Comments: I wrote down a good plan for Subset 0. And drew about my plan for each git command in subset 0 before attempting to implement this time around. (It was pretty much just pseudocode for each command) I managed to make my code much easier to understand for myselfand although I'm going through things relatively slowly, I want to keep at good commenting disciplines. I went through the lab08 snapshot perl program and have got my commit command semi-working. I'm dealing with a bug where commit is not being incremented above 1.
+
+Date: 26/09/2018
+Start: 23:00
+End: 1:00 (27/08/2018)
+Activity: Debugging
+Comments: I managed to figure out what was wrong with my commits not incrementing. Every time my program is run I need to load the last commit and to store that value I will have a file in legit rep called last_commit. The same will also go for the snapshot number.
+
+Date: 28/09/2018
+Start: 15:00
+End: 18:00
+Activity: Coding
+Comments: Before moving onto log and show I was struggling with passing subset0_8. I realised the issue had to do with the way I was getting the file names in check files funciton. I had to chomp and concat accordingly. I figured it about by printing out what I thought i was passing as the file names. Once that was complete log was very easy to implement and what was left was show function and then subset0 would be complete. I had the flu during mid-sem so it whacked my time management plan and I don't think I'll pursue the other subsets in time before the busy week ahead.
+
+Date: 28/08/2018
+Start: 20:00
+End: 1:00 (29/08/2018)
+Activity: Coding + Cleaning Up Code + Comment
+Comments: After completing show which is the last funciton needed to be implemented in subset0, I had to then ensure all error messages were correct to the expected output and they were all printing to STDERR. I also took this time to clean up my code and flesh out my comments.
+
+Date: 1/10/2018
+Start: 17:00
+End: 17:30
+Activity: Test Suites Planning
+Comments: Now that i've managed to pass all tests in autotest subset0, I had a quick brainstorm session and planned the tests suites I would do. This is what i had planned:
+1. checks all usage error messages
+2. big log
+3. big show
+4. normal
+5. normal
+6. file doesnt exist in index
+7. file doesnt exist in snap but in index
+9. file is different in index and snap
+10. file is same in index and snap
+
+Date: 2/10/2018
+Start: 22:00
+End: 00:00 (3/10/2018)
+Activity: Test Suites
+Comments: Unfortunately one of the test suites I planned on didn't work out. I thought i could remove the files from snapshot folder but it doesn't seem to be allowed with the 2041 legit else I just couldnt figure it out. So I went for more straight forward test. Still was able to do about 90% of the tests I planned. It was hard to make 10 tests without it being something I've already tested since i only implemented up to subset0. I'm ready to submit since I don't have the time to do the others due to work commitments.
